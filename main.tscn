@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbekfoubry06f"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_ohysc"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_cajpk"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Player" type="Sprite3D" parent="."]
+script = ExtResource("1_ohysc")
+
+[node name="Crosshair" type="Marker3D" parent="Player"]
+
+[node name="Terrain" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain"]
+shape = SubResource("WorldBoundaryShape3D_cajpk")
