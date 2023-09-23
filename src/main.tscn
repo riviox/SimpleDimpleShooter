@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbekfoubry06f"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_ohysc"]
+[ext_resource type="Script" path="res://Terrain.gd" id="2_oenm0"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Player" type="Sprite3D" parent="."]
+script = ExtResource("1_ohysc")
+
+[node name="Eyes" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.754191, 0)
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="Terrain" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain"]
+script = ExtResource("2_oenm0")

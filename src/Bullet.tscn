@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://4c46xfiw5gah"]
+
+[node name="Bullet" type="Node3D"]
+
+[node name="Motion" type="Node3D" parent="."]
