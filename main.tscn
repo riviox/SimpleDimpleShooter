@@ -9,7 +9,8 @@
 [node name="Player" type="Sprite3D" parent="."]
 script = ExtResource("1_ohysc")
 
-[node name="Crosshair" type="Marker3D" parent="Player"]
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.754191, 0)
 
 [node name="Terrain" type="StaticBody3D" parent="."]
 
